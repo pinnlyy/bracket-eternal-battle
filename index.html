@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ETERNAL BATTLE</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="bg-glow"></div>
+
+  <header class="hero">
+    <div class="crown">👑</div>
+    <h1>ETERNAL BATTLE</h1>
+    <p>Official Tournament Bracket • Season 1</p>
+    <div class="hero-line">☁️ STORM • ⚔️ SWORD • ⚡ THUNDER</div>
+    <div class="hero-actions">
+      <button onclick="scrollToBracket()">Lihat Bracket</button>
+      <button class="ghost" onclick="scrollToParticipants()">Daftar Peserta</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="info-grid">
+      <div class="info-card"><span>👥</span><b>32 Participants</b><small>Circle Competitors</small></div>
+      <div class="info-card"><span>⚔️</span><b>Bracket</b><small>Round 32 to Final</small></div>
+      <div class="info-card"><span>📞</span><b>Contact</b><small>Klik nama CC</small></div>
+    </section>
+
+    <section id="bracket" class="bracket-section">
+      <div class="section-head">
+        <h2>⚔️ Tournament Bracket</h2>
+        <p>Klik nama peserta untuk melihat nomor perwakilan.</p>
+      </div>
+      <div class="bracket" id="bracketGrid"></div>
+    </section>
+
+    <section id="participants" class="participants-section">
+      <div class="section-head">
+        <h2>📋 Participants</h2>
+        <p>Daftar peserta resmi ETERNAL BATTLE.</p>
+      </div>
+      <div class="participant-grid" id="participantGrid"></div>
+    </section>
+  </main>
+
+  <div class="modal" id="contactModal">
+    <div class="modal-card">
+      <button class="close" onclick="closeModal()">×</button>
+      <div class="modal-icon">👑</div>
+      <h3 id="modalName">Nama CC</h3>
+      <p>Nomor perwakilan/admin:</p>
+      <div class="phone-box" id="modalPhone">-</div>
+      <a class="wa-btn" id="waLink" target="_blank">Chat WhatsApp</a>
+    </div>
+  </div>
+
+  <footer>👑 ONLY THE STRONGEST WEAR THE CROWN 👑</footer>
+
+  <script src="data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
